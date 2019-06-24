@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    render plain: @products.description
+    # render plain: @products.description
   end
 
   def new
