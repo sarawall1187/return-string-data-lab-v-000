@@ -18,6 +18,10 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     resp = @product.inventory > 0 ? "true" : "false"
     render plain: resp
+    respond_to do |format|
+        format.js
+    end
+
   end
 
   def description
