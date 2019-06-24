@@ -14,4 +14,7 @@ class ProductsController < ApplicationController
   def inventory
   end
 
+  def description
+  end
+
 end
