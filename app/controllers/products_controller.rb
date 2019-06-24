@@ -11,4 +11,7 @@ class ProductsController < ApplicationController
   def create
   end
 
+  def inventory
+  end
+
 end
