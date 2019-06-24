@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
 
   def inventory
     @product = Product.find(params[:id])
-    @product.inventory <= 0 ? true : false
+    @product.inventory >= 0 ? true : false
     redirect_to products_path
   end
 
