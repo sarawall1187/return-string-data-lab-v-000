@@ -21,7 +21,10 @@ class ProductsController < ApplicationController
   end
 
   def description
+    product = Product.find_by_id(params[:id])
+    render plain: product.description
   end
+
 
 private
 
